@@ -47,7 +47,9 @@ As you can see from the above image, the model has signifcant amount of error in
 | R2 Score      | 0.57  |
 | MSE           | 0.55  |
 
-In the above results, R2 score show that 57% of the changeability of the dependent output attribute can be explained by the model while the remaining 432 % of the variability is still unaccounted for.
+In the above results, R2 score show that 57% of the changeability of the dependent output attribute can be explained by the model while the remaining 43% of the variability is still unaccounted for.
+
+The value of the MSE ranges from zero to infinity. MSE increases exponentially with an increase in error. A good model will have an MSE value closer to zero.
 
 ## Key Takeaways
 
@@ -86,13 +88,14 @@ What are the future modification you plan on making to this project?
 
 Linear regression predicts the relationship between two variables by assuming a linear connection between the independent and dependent variables. It seeks the optimal line that minimizes the sum of squared differences between predicted and actual values. It can extend to multiple linear regression involving several independent variables and logistic regression, suitable for binary classification problems
 
-#### What is Mean absolute error?
+#### What is Mean Squared Error (MSE)?
 
-Mean absolute error, abbreviated as MAE, is a metric used to measure the average absolute difference between the predicted and actual values in a regression problem i.e. modeling various relations of variables. 
+The Mean Squared Error (MSE) is an estimator measures the average of error squares i.e. the average squared difference between the estimated values and true value.
 
-Simply put, MAE tells us how much our predictions are off from the actual values in the dataset. It helps us understand the accuracy of our model by measuring the absolute errors between predicted and true values.
+In MSE, we calculate the error by squaring the difference between the predicted value and actual value and averaging it across the dataset. 
 
-A lower MAE means our model's predictions are closer to the actual values. This indicates better performance.
+MSE will never be negative since the errors are squared. The value of the error ranges from zero to infinity. MSE increases exponentially with an increase in error. A good model will have an MSE value closer to zero.
+
 
 #### What is R2 score?
 R2 score is used to evaluate the performance of a linear regression model. It is the amount of the variation in the output dependent attribute which is predictable from the input independent variable(s). 
@@ -105,8 +108,6 @@ It can be referred that 58% of the changeability of the dependent output attribu
 R2 indicates the proportion of data points which lie within the line created by the regression equation. A higher value of R2 is desirable as it indicates better results.
 
 #### What is the California Housing Dataset?
-
-.. _california_housing_dataset:
 
 California Housing dataset
 --------------------------
